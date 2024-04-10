@@ -55,6 +55,14 @@ AWS:  Plataforma de servicios en la nube ofrecida por Amazon
 
 # ARQUITECTURA Y DISEÑO
 
+![image](https://github.com/NicolasCastro9/AREP_LAB08/assets/98556822/fb81fc63-71b6-4abd-a235-2b256d62439c)
+
+Para el despliegue usando la nube de AWS se planea una arquitectura de microservicios en donde utilizaremos los siguientes servicios que nos proporcionan
+
+1. S3: Es un servicio de almacenamiento en la nube altamente escalable y duradero. para alamcenar los archivos estaticos del login y del post
+2. cognito: servicio de AWS que se utiliza para agregar funciones de autenticación y seguridad
+3. VPC: Servico para crear una red virtual privada para las instancias
+4. EC2: Servicio que proporciona capacidad informática escalable en forma de instancias virtuales.
 
 # DESPLIEGUE AWS
 
