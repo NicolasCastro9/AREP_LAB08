@@ -1,5 +1,5 @@
 # LABORATORIO MICROSERVICIOS
-El proyecto consiste en una aplicación creada con el framework de quarkus que consiste en un servicio de hacer post de 140 caracteres e ir registrandolos en un stream único similares a los de una red social "twitter", ademas de implementar esta aplicación en aws utilizando los servicios que nos provee la nube de amazon para crear una arquitectura de microservicios.
+El proyecto consiste en una aplicación creada con el framework de quarkus el cual el objetivo es crear un servicio para hacer post de 140 caracteres e ir registrandolos en un stream único similares a los de una red social "twitter", ademas de implementar esta aplicación en aws utilizando los servicios que nos provee la nube de amazon para crear una arquitectura de microservicios.
 
 # ENTIDADES
 Usuario: Es el que se registra en el login de la aplicación proporcionando su nombre de usuario y la contraseña
