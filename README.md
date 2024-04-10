@@ -30,7 +30,7 @@ AWS:  Plataforma de servicios en la nube ofrecida por Amazon
    ```
 2. nos desplazamos hacia el directorio donde se encuentra el pom
    ```
-   cd Monolito/quarqus-api
+   cd Monolito/quarkus-api
    ```
 3. Ejecutamos el siguiente comando para compilar el proyecto y descargar las dependencias definidas en el archivo
    ```
