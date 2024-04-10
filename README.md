@@ -24,3 +24,29 @@ AWS:  Plataforma de servicios en la nube ofrecida por Amazon
 
 # INSTRUCCIONES DE USO
 
+1. Clonamos el repositorio
+   ```
+   git clone https://github.com/NicolasCastro9/AREP_LAB08.git
+   ```
+2. nos desplazamos hacia el directorio donde se encuentra el pom
+   ```
+   cd Monolito/quarqus-api
+   ```
+3. Ejecutamos el siguiente comando para compilar el proyecto y descargar las dependencias definidas en el archivo
+   ```
+   mvn clean install
+   ```
+4. Ejecutamos el siguiente comando para iniciar la aplicación quarkus en modo de desarrollo.
+   ```
+   mvn quarkus:dev
+   ```
+5. Nos dirigimos a la siguiente URL para probar el login y la creación de posts, ingrese con cualquier usuario y contraseña
+   ```
+   http://localhost:8080/twitter/login
+   ```
+   ![image](https://github.com/NicolasCastro9/AREP_LAB08/assets/98556822/ef3e973b-f4e9-4836-9b1e-bf6b7a58dbc9)
+
+   ![image](https://github.com/NicolasCastro9/AREP_LAB08/assets/98556822/04b67ca5-58a4-4979-9406-94132a6c46d8)
+
+# ARQUITECTURA Y DISEÑO
+
