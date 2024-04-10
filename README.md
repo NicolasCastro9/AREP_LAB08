@@ -45,8 +45,25 @@ AWS:  Plataforma de servicios en la nube ofrecida por Amazon
    http://localhost:8080/twitter/login
    ```
    ![image](https://github.com/NicolasCastro9/AREP_LAB08/assets/98556822/ef3e973b-f4e9-4836-9b1e-bf6b7a58dbc9)
-
+   
    ![image](https://github.com/NicolasCastro9/AREP_LAB08/assets/98556822/04b67ca5-58a4-4979-9406-94132a6c46d8)
+
+6. Generar javadoc
+   ```
+   mvn javadoc:javadoc
+   ```
 
 # ARQUITECTURA Y DISEÑO
 
+
+# DESPLIEGUE AWS
+
+
+# AUTORES
+
+Nicolás Castro Jaramillo
+
+Sergio Andres Gonzales
+
+# LICENCIA
+Este proyecto está bajo la licencia MIT.
