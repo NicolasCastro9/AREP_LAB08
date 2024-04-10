@@ -12,11 +12,19 @@ import service.PostService;
 
 import java.util.Optional;
 
+/**
+ * Controlador que maneja las solicitudes relacionadas con los posts en la API.
+ */
 @Path("/service/post")
 public class PostController {
     @Inject
     PostService postService;
 
+    /**
+     * Agrega un nuevo post.
+     * @param content El contenido del post en formato JSON.
+     * @return Una respuesta HTTP que contiene el post agregado en formato JSON.
+     */
     @POST()
     @Path("addPost")
     @Consumes(MediaType.APPLICATION_JSON)

@@ -6,8 +6,18 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+/**
+ * Clase que proporciona métodos para establecer una conexión HTTP.
+ */
 public class Connection {
     private static final String USER_AGENT = "Mozilla/5.0";
+
+    /**
+     * Realiza una conexión HTTP GET a la URL especificada.
+     * @param url La URL a la que se realizará la conexión.
+     * @return La respuesta obtenida como una cadena de texto.
+     * @throws IOException Si ocurre un error durante la conexión.
+     */
     public static String connection(String url) throws IOException {
 
         URL obj = new URL(url);
