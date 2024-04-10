@@ -2,24 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Twitter</title>
+    <title>post de tuitter</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #15202B;
+            background-color: #000000;
             color: #fff;
             margin: 0;
             padding: 0;
         }
         .principal {
             padding: 50px;
-            background-color: #1e2d3d;
+            background-color: #ff0000;
+            border-radius: 40px;
             margin: 30px;
         }
         .container {
-            background-color: #192734;
+            background-color: #000000;
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Agregamos sombra para que parezca que flotan */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
             text-align: center;
             padding: 20px;
             max-width: 500px;
@@ -28,6 +29,7 @@
         h1 {
             font-size: 24px;
             margin-bottom: 20px;
+            text-align: center;
         }
         label {
             font-size: 18px;
@@ -44,34 +46,45 @@
             color: #fff;
         }
         input[type="button"] {
-            background-color: #1da1f2;
+            background-color: #5900ff;
+            display: inline-block;
+            margin-top: 10px;
             color: #fff;
             border: none;
-            border-radius: 4px;
+            border-radius: 20px;
             padding: 10px 20px;
             font-size: 18px;
             cursor: pointer;
+            
+            
         }
+        form {
+            text-align: center; /* Centra el contenido del formulario */
+            margin: 0 auto; /* Centra el formulario horizontalmente */
+        }
+        input[type="button"]:hover {
+            background-color: #ff00ea; 
+        }        
         #tweetList {
             list-style: none;
             padding: 0;
         }
         .tweet {
-            border: 1px solid #1DA1F2;
+            border: 1px solid #441df2;
             border-radius: 50px;
             padding: 20px; 
             margin-top: 20px; 
-            background-color: #1A1A1A; 
+            background-color: #000000; 
             transition: transform 0.5s ease-in-out;
         }
     </style>
 </head>
 <body>
 <div class="principal">
-    <h1>TWITTER</h1>
+    <h1>POSTS</h1>
     <form>
         <label for="content"></label><br>
-        <input type="text" id="content" name="content" value="Tweet"><br><br>
+        <input type="text" id="content" name="content" placeholder="Publica tu contenido aqui"><br><br>
         <input type="button" value="Submit" onclick="loadPostMsg()">
     </form>
 
@@ -120,14 +133,22 @@
         })
         .then(data => {
             const container = document.getElementById('getrespmsg');
-            container.innerHTML = ''; // Limpiar el contenedor antes de agregar nuevo contenido
+            container.innerHTML = ''; 
             const keys = Object.keys(data);
 
-            keys.reverse(); // Revertir el orden de los tweets para mostrar el más reciente primero
+            keys.reverse(); 
 
             keys.forEach(key => {
                 const tweetContainer = document.createElement('div');
-                tweetContainer.classList.add('tweet'); // Agrega la clase 'tweet' al contenedor
+                tweetContainer.classList.add('tweet');
+                const img = document.createElement('img');
+                const imgUrl = 'https://i.pinimg.com/736x/b9/22/52/b92252f0e725fd0325863911a42964b4.jpg';
+                img.src = imgUrl;
+                img.style.width = '60px'; 
+                img.style.height = '60px'; 
+                img.style.marginRight = '10px';
+                img.style.float = 'right';
+                tweetContainer.appendChild(img);
 
                 const p = document.createElement('h5');
                 const datastring = JSON.stringify(data[key]);
@@ -141,7 +162,6 @@
                 tweetContainer.appendChild(p);
                 container.appendChild(tweetContainer);
 
-                // Aplicar una animación de surgir al agregar un nuevo tweet
                 tweetContainer.style.transform = 'translateY(50px)';
                 setTimeout(function () {
                     tweetContainer.style.transform = 'translateY(0)';
@@ -153,6 +173,9 @@
             const container = document.getElementById('getrespmsg');
             container.textContent = 'Error al procesar la solicitud';
         });
+
+
+        
     }
 </script>
 </body>

@@ -15,7 +15,7 @@ public class Connection {
         con.setRequestMethod("GET");
         con.setRequestProperty("User-Agent", USER_AGENT);
 
-        //The following invocation perform the connection implicitly before getting the code
+        
         int responseCode = con.getResponseCode();
         System.out.println("GET Response Code :: " + responseCode);
 
@@ -30,7 +30,7 @@ public class Connection {
             }
             in.close();
 
-            // print result
+            
             return response.toString();
         } else {
             return "GET request not worked";

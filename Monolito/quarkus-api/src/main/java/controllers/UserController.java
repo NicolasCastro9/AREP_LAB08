@@ -13,4 +13,5 @@ public class UserController {
     public Response getAllPosts() {
         return Response.ok("Es valido").build();
     }
+    
 }
