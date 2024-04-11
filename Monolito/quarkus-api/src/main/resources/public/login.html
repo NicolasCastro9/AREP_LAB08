@@ -89,7 +89,7 @@
         function saveUsername(){
             const username = document.getElementById('user').value;
             localStorage.setItem('username', username);
-            const endpoint = "http://localhost:8080/twitter/"
+            const endpoint = "http://ec2-44-203-65-90.compute-1.amazonaws.com:8080/twitter/"
             window.location.href = endpoint;
         }
     </script>

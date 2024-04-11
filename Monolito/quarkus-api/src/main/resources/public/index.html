@@ -94,7 +94,7 @@
 <script>
     function loadPostMsg() {
         let content = document.getElementById('content').value;
-        let url = "http://localhost:8080/service/post/addPost";
+        let url = "http://ec2-44-203-65-90.compute-1.amazonaws.com:8080/service/post/addPost";
         const post = localStorage.getItem('username') + "," + content;
 
         fetch(url, {
