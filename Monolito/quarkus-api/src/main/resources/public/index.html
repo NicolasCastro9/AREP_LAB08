@@ -122,7 +122,7 @@
     }
 
     function getAllPosts() {
-        fetch("http://localhost:8080/service/thread/all-posts", {
+        fetch("http://ec2-44-203-65-90.compute-1.amazonaws.com:8080/service/thread/all-posts", {
             method: 'GET'
         })
         .then(response => {
