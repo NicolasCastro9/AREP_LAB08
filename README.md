@@ -65,6 +65,7 @@ Para el despliegue usando la nube de AWS se planea una arquitectura de microserv
 4. EC2: Servicio que proporciona capacidad informática escalable en forma de instancias virtuales.
 
 # DESPLIEGUE AWS
+https://youtu.be/yBcnZoydOJ0
 
 
 # AUTORES
